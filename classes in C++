@@ -1,0 +1,44 @@
+#include <iostream>
+using namespace std;
+
+// The Car class definition
+class Bike {
+public:
+    // Attributes (variables) of a bike
+    string color;
+    int size;
+    string type;
+
+    // Constructor to initialize the Car object
+    Bike (string c, int s, string t) {
+        color = c;  // Set the color of the bike 
+        size = s;   // Set the type of the bike
+        type = t;   // Set the make of the bike
+    }
+
+    // Function to display the details of the car
+    void displayDetails() {
+        cout << "Bikes details: " << endl;
+        cout << "Color: " << color << endl;
+        cout << "type: " << type << endl;
+        cout << "size: " << size << endl << endl;
+    }
+};
+
+int main() {
+    // Creating an object of Car
+    Bike myBike("Red", 9.7, "Mountain");
+
+    // Creating another object of Car
+    Bike mySecondBike("Black", 7, "Mountain");
+
+    // Creating a third object of Car
+    Bike myThirdBike("Blue", 8, "Racing");
+
+    // Display details of cars
+    myBike.displayDetails();
+    mySecondBike.displayDetails();
+    myThirdBike.displayDetails();
+
+    return 0;
+}
